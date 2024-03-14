@@ -1,12 +1,12 @@
 package factorymethod;
 
-import factorymethod.products.IConexionBd;
+import factorymethod.conexiones.IConexionBd;
 
-public abstract class ConexionFactory {
+public abstract class ConexionManager {
         private String conexionType;
         private IConexionBd conexionBd;
 
-        public ConexionFactory(String conexionType) {
+        public ConexionManager(String conexionType) {
             this.conexionType = conexionType;
         }
 

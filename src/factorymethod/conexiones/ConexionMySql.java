@@ -1,4 +1,4 @@
-package factorymethod.products;
+package factorymethod.conexiones;
 
 public class ConexionMySql implements IConexionBd {
 

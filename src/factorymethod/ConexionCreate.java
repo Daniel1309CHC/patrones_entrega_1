@@ -1,12 +1,12 @@
 package factorymethod;
 
-import factorymethod.products.IConexionBd;
-import factorymethod.products.ConexionMySql;
-import factorymethod.products.ConexionPostgreSQL;
-import factorymethod.products.ConexionOracle;
+import factorymethod.conexiones.IConexionBd;
+import factorymethod.conexiones.ConexionMySql;
+import factorymethod.conexiones.ConexionPostgreSQL;
+import factorymethod.conexiones.ConexionOracle;
 
-public class ConexionCroncreteFactory extends ConexionFactory {
-    public ConexionCroncreteFactory(String conexionType) {
+public class ConexionCreate extends ConexionManager {
+    public ConexionCreate(String conexionType) {
         super(conexionType);
     }
 

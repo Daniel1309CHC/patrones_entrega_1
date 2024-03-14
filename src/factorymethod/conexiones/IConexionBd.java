@@ -1,4 +1,4 @@
-package factorymethod.products;
+package factorymethod.conexiones;
 
 public interface IConexionBd {
     public void open();

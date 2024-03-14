@@ -2,10 +2,10 @@ package factorymethod;
 
 public class Main {
 
-    static ConexionFactory conexionBd;
+    static ConexionManager conexionBd;
 
     public static void configure(String type){
-        conexionBd = new ConexionCroncreteFactory(type);
+        conexionBd = new ConexionCreate(type);
     }
 
 
