@@ -15,6 +15,10 @@ public class Electronic {
         this.model = model;
     }
 
+    public void setModel(String model) {
+        this.model = model;
+    }
+
     public Electronic clone() {
         return new Electronic(this.name, this.description, this.category, this.price, this.model);
     }

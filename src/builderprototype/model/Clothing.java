@@ -15,6 +15,10 @@ public class Clothing {
         this.color = color;
     }
 
+    public void setColor(String color) {
+        this.color = color;
+    }
+
     public Clothing clone() {
         return new Clothing(this.name, this.description, this.category, this.price, this.color);
     }
