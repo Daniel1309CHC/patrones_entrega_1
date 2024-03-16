@@ -1,18 +1,15 @@
 package builderprototype.model;
 
-public class Clothing {
-    private String name;
-    private String description;
-    private String category;
-    private double price;
+public class Clothing extends Product{
     private String color;
 
-    public Clothing(String name, String description, String category, double price, String color) {
-        this.name = name;
-        this.description = description;
-        this.category = category;
-        this.price = price;
-        this.color = color;
+    public Clothing () {
+
+    }
+
+    public Clothing(Clothing target) {
+        super(target);
+        this.color = target.color;
     }
 
     public void setColor(String color) {
@@ -20,12 +17,12 @@ public class Clothing {
     }
 
     public Clothing clone() {
-        return new Clothing(this.name, this.description, this.category, this.price, this.color);
+        return new Clothing(this);
     }
 
     @Override
     public String toString() {
-        return "Clothing [name=" + name + ", description=" + description
-                + ", category=" + category + ", price=" + price + ", color=" + color + "]";
+        return "Clothing [name=" + this.getName() + ", description=" + this.getDescription()
+                + ", category=" + this.getCategory() + ", price=" + this.getPrice() + ", color=" + color + "]";
     }
 }

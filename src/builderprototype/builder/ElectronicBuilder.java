@@ -1,5 +1,6 @@
 package builderprototype.builder;
 
+import builderprototype.model.Clothing;
 import builderprototype.model.Electronic;
 
 public class ElectronicBuilder implements ProductBuilder {
@@ -39,6 +40,12 @@ public class ElectronicBuilder implements ProductBuilder {
     }
 
     public Electronic getResult() {
-        return new Electronic(name, description, category, price, model);
+        Electronic electronic =  new Electronic();
+        electronic.setName(name);
+        electronic.setDescription(description);
+        electronic.setCategory(category);
+        electronic.setPrice(price);
+        electronic.setModel(model);
+        return electronic;
     }
 }

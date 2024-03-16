@@ -21,7 +21,7 @@ public class Main {
         // Clone the Clothing object
         System.out.println("- After -");
         Clothing clothingClone = clothing.clone();
-        clothingClone.setColor("Blue");
+        ((Clothing) clothingClone).setColor("Blue");
         System.out.println("OG: " + clothing);
         System.out.println("Clone: " + clothingClone);
         System.out.println("<-- End Clothing -->");
@@ -38,7 +38,7 @@ public class Main {
         // Clone the Electronic object
         System.out.println("- After -");
         Electronic electronicClone = electronic.clone();
-        electronicClone.setModel("2024");
+        ((Electronic) electronicClone).setModel("2024");
         System.out.println("OG: " + electronic);
         System.out.println("Clone: " + electronicClone);
         System.out.println("<--End Electronic -->");

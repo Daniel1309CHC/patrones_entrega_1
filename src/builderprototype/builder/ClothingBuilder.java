@@ -39,6 +39,12 @@ public class ClothingBuilder implements ProductBuilder{
     }
 
     public Clothing getResult() {
-        return new Clothing(name, description, category, price, color);
+        Clothing clothing = new Clothing();
+        clothing.setName(name);
+        clothing.setDescription(description);
+        clothing.setCategory(category);
+        clothing.setPrice(price);
+        clothing.setColor(color);
+        return clothing;
     }
 }
