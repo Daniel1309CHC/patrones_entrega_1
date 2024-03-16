@@ -1,4 +1,4 @@
-# patrones entrega 1
+# Patrones y Diseño de Software - Entrega 1
 Objetivo: Demostrar la aplicación de principios SOLID y patrones creacionales.
 
  
